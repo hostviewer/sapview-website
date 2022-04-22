@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Get Started · SAPView v1.0</title>
+    <title>Signin Template · Bootstrap v5.1</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
 
@@ -33,69 +33,45 @@
 
     
     <!-- Custom styles for this template -->
+    <!-- <link href="signin.css" rel="stylesheet"> -->
     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    
+
+
     <main class="form-signin">
       <form>
-        <a href="index.html"><img class="mb-4" src="assets/brand/logo.svg" alt="" width="72" height="72"></a>
-        <h1 class="h3 mb-3 fw-normal">Please enter your details</h1>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-          </div>
+        <a href="index.html"><img class="mb-4" src="assets/brand/logo.svg" alt="" width="72" height="57"></a>
+        <h1 class="h3 mb-3 fw-normal">Create your account</h1>
+    
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <!-- 
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>-->
+        <!-- <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Create password</label>
+        </div> -->
+        
+        <div class="form-check mb-3"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> 
+          <label class="form-check-label" for="flexCheckChecked"> Accept <a href="terms.html" >terms and conditions</a></label>
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-
+        
+        <a href="confirmation.html" class="w-100 btn btn-lg btn-outline-primary" role="button">Create account</a>
+        <!-- <button class="w-100 btn btn-lg btn-outline-primary" type="submit">Create account</button> -->
+    
+        <p class="mt-3 mb-1 text-center fw-lighter text-muted">Already have an account? <a href="signin.html" >Sign in</a></p>
+        <p class="text-center fw-lighter text-muted">Still undecided <a href="pricing.html" >Plans</a></p>
+    
+        <p class="mt-5 mb-3 text-muted">&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
       </form>
     </main>
-
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="containerfooter">
-        <span class="text-muted">&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script></span>
-      </div>
-    </footer>
-
+  
     
   </body>
 </html>
