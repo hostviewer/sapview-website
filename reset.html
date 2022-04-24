@@ -33,41 +33,44 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
     
-<main class="form-signin">
-  <form>
-    <a href="index.html"><img class="mb-4" src="assets/brand/logo.svg" alt="" width="72" height="57"></a>
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <main class="form-signin">
+      <form>
+        <a href="index.html"><img class="mb-4" src="assets/brand/logo.svg" alt="" width="72" height="57"></a>
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">User name</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-    <p class="mt-2 mb-3">
-      <a href="pricing.html" class=" text-center fw-lighter text-primary" >Forgot password?</a>
-    </p>
-    <!-- <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div> -->
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">User name or email</label>
+        </div>
 
-    <p class="mt-3 mb-1 text-center fw-lighter text-muted">Don't have a SAPView account yet?</p>
-    <p class="mt-2 mb-3">
-      <a href="pricing.html" >Get started now</a>
-    </p>
+        <span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Please enter a valid user name or email">
+          <button class="w-100 btn btn-lg btn-primary" type="submit" disabled>Reset my password</button>
+        </span>
 
-    <p class="mt-5 mb-3 text-muted">&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
-  </form>
-</main>
+        <p class="mt-3 mb-1 text-center fw-lighter text-muted">Don't have a SAPView account yet?</p>
+        <p class="mt-2 mb-3">
+          <a href="pricing.html" >Get started now</a>
+        </p>
+
+        <p class="mt-5 mb-3 text-muted">SAPView &copy; <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
+      </form>
+    </main>
+
+    <!-- JavaScript -->
+    <!-- popper and bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
 
     
