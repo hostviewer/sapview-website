@@ -41,9 +41,9 @@
 
     <main class="form-signin">
       <a href="index.html"><img class="mb-4" src="assets/brand/logo.svg" alt="" width="72" height="57"></a>
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 fw-normal">Questions and Requests</h1>
 
-        <form method="POST" action="https://script.google.com/macros/s/AKfycbxHd0nlDN_PPOZxnjI8oeWmRvMDRVMVd2tY2Qf-MQLo20r79-Gl0485O_bcIUcVIBHb/exec" id="my-form">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbw4BaxWhyIXJTRgJrd3b0w2hDPPvBoxl2-SW-16aEH_8PhrAe8VI0u3HmebkFboukGD/exec" id="my-form">
           <div class="form-floating">
             <input name="Email" type="email" placeholder="Email" class="form-control" id="floatingEmail" required>
             <label for="floatingEmail">Company email</label>
@@ -53,16 +53,15 @@
             <label for="floatingName">Name</label>
           </div>
 
-          <div class="form-floating mt-3 mb-3">
-            <select name="Plan" class="form-select" required aria-label="select example">
-              <option value="">Select your plan</option>
-              <option value="1">As you go ($189/pc)</option>
-              <option value="2">4 monthly scans ($199/month)</option>
-              <option value="3">20 monthly scans ($699/month)</option>
-              <option value="3">100 monthly scans ($2999/month)</option>
-            </select>
-            <div class="invalid-feedback">Please select your plan</div>
+          <div class="mb-4">
+            <label for="Message" class="form-label">My request or question</label>
+            <textarea name="Message" class="form-control" id="Message" rows="3"></textarea>
           </div>
+
+          <!-- <div class="form-floating">
+            <input name="Question" type="text" placeholder="Question"  class="form-control" id="floatingQuestion" required>
+            <textarea for="floatingQuestion">Question or request</textarea>
+          </div> -->
 
           <div class="form-check mt-3 mb-3">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
@@ -70,14 +69,14 @@
             </label>
           </div>
           
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Send my request</button>
 
           
        </form>
 
-       <p class="mt-3 mb-1 text-center fw-lighter text-muted">Not ready yet and have more questions?</p>
+       <p class="mt-3 mb-1 text-center fw-lighter text-muted">Go back to the main page</p>
         <p class="mt-2 mb-3">
-          <a href="contact.html" >Contact us</a>
+          <a href="index.html" >SAPView</a>
         </p>
 
        <p class="mt-5 mb-3 text-muted">SAPView &copy; <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
